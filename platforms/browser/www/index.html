@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta http-equiv="Access-Control-Allow-Origin" content="*">
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <title>BidConvert</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <h1>BidConvert</h1>
+            </div>
+            <div class="app">
+                <div class="content">
+                    <div class="value">
+                        <label>Enter the amount: </label>
+                        <input id="amount" type="text" title="Amount" value="" />
+                    </div>
+                    <div class="dropdowns">
+                        <div>
+                        <label>Base currency: </label>
+                            <select id="base" class="currency-selector">
+                                <option value="" disabled selected hidden>Choose Currency</option>
+                                <option value="AUD">Australian Dollar</option>
+                                <option value="BRL">Brazilian Real</option>
+                                <option value="GBP">British Pound</option>
+                                <option value="CAD">Canadian Dollar</option>
+                                <option value="CLP">Chilean Peso</option>
+                                <option value="CNY">Chinese Yuan Renminbi</option>
+                                <option value="CZK">Czech Koruna</option>
+                                <option value="DKK">Danish Krone</option>
+                                <option value="EUR">Euro</option>
+                                <option value="HKD">Hong Kong Dollar</option>
+                                <option value="HUF">Hungarian Forint</option>
+                                <option value="INR">Indian Rupee</option>
+                                <option value="IDR">Indonesian Rupiah</option>
+                                <option value="ILS">Israeli New Shekel</option>
+                                <option value="JPY">Japanese Yen</option>
+                                <option value="KRW">Korean Won</option>
+                                <option value="MYR">Malaysian Ringgit</option>
+                                <option value="MXN">Mexican Peso</option>
+                                <option value="NZD">New Zealand Dollar</option>
+                                <option value="NOK">Norwegian Krone</option>
+                                <option value="PKR">Pakistan Rupee</option>
+                                <option value="PHP">Philippine Peso</option>
+                                <option value="PLN">Polish Zloty</option>
+                                <option value="RUB">Russian Ruble</option>
+                                <option value="SGD">Singapore Dollar</option>
+                                <option value="ZAR">South African Rand</option>
+                                <option value="SEK">Swedish Krona</option>
+                                <option value="CHF">Swiss Franc</option>
+                                <option value="TWD">Taiwan Dollar</option>
+                                <option value="THB">Thai Baht</option>
+                                <option value="TRY">Turkish Lira</option>
+                                <option value="USD">US Dollar</option>
+                            </select>
+                        </div>
+                    <div>
+                        <label>Target currency: </label>
+                            <select id="target" class="currency-selector">
+                                <option value="" disabled selected hidden>Choose Currency</option>
+                                <option value="AUD">Australian Dollar</option>
+                                <option value="BRL">Brazilian Real</option>
+                                <option value="GBP">British Pound</option>
+                                <option value="CAD">Canadian Dollar</option>
+                                <option value="CLP">Chilean Peso</option>
+                                <option value="CNY">Chinese Yuan Renminbi</option>
+                                <option value="CZK">Czech Koruna</option>
+                                <option value="DKK">Danish Krone</option>
+                                <option value="EUR">Euro</option>
+                                <option value="HKD">Hong Kong Dollar</option>
+                                <option value="HUF">Hungarian Forint</option>
+                                <option value="INR">Indian Rupee</option>
+                                <option value="IDR">Indonesian Rupiah</option>
+                                <option value="ILS">Israeli New Shekel</option>
+                                <option value="JPY">Japanese Yen</option>
+                                <option value="KRW">Korean Won</option>
+                                <option value="MYR">Malaysian Ringgit</option>
+                                <option value="MXN">Mexican Peso</option>
+                                <option value="NZD">New Zealand Dollar</option>
+                                <option value="NOK">Norwegian Krone</option>
+                                <option value="PKR">Pakistan Rupee</option>
+                                <option value="PHP">Philippine Peso</option>
+                                <option value="PLN">Polish Zloty</option>
+                                <option value="RUB">Russian Ruble</option>
+                                <option value="SGD">Singapore Dollar</option>
+                                <option value="ZAR">South African Rand</option>
+                                <option value="SEK">Swedish Krona</option>
+                                <option value="CHF">Swiss Franc</option>
+                                <option value="TWD">Taiwan Dollar</option>
+                                <option value="THB">Thai Baht</option>
+                                <option value="TRY">Turkish Lira</option>
+                                <option value="USD">US Dollar</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="convert">
+                        <input type="button" id="convert" title="convert" value="Convert" onclick="app.queryCurrency()" />
+                    </div>
+                    <div class="returnedValue"></div>
+                    <div class="last-updated"><h2></h2></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scripts reference -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/select2.min.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <!-- Stylesheets -->
+        <link rel="stylesheet" type="text/css" href="css/select2.min.css" />
+    </body>
+</html>
